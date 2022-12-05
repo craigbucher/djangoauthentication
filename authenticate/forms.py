@@ -1,9 +1,36 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django import forms
 from django.contrib.auth.models import User
 
-# Create new form, based on UserCreationForm to add
-# additional fields to default
+# Create new form that inherits from django's native UserChangeForm
+# This allows us to limit what is displayed to the user (don't want everything)
+
+
+class EditProfileForm(UserChangeForm):
+    # If want to hide password field on update page:
+    #password = forms.CharField(max_length=100, label='', widget=forms.TextInput(attrs={'type': 'hidden'}))
+
+    class Meta:
+        model = User
+        # If we wanted to designate the default fields to *exclude*:
+        #fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2')
+        fields = ('username', 'first_name', 'last_name',
+                  'email', 'password')
+        # Django requires us to include 'password', even though we cant chage it here
+
+# To remove all information about password not to show up in web inspector we can simply inherit from forms.User instead from UserChangeForm.
+
+# from django import forms
+
+# class EditProfileForm(forms.ModelForm):
+
+# #and not include ‘password in fields’
+
+# class Meta:
+# model = User
+# fields = (‘username’, ‘first_name’, ‘last_name’, ’email’,)
+
+# the rest remains same as in Johns code
 
 
 class SignUpForm(UserCreationForm):

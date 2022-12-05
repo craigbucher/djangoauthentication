@@ -1,0 +1,60 @@
+User Authentication With Python And Django
+https://codemy.com/module-1/introduction-video-1-11/
+
+Unit 1	Introduction | Video 1	
+ 
+Unit 2	Installing Python | Video 2	
+ 
+Unit 3	Virtualenv | Video 3	
+ 
+Unit 4	Installing Django | Video 4	
+ 
+Unit 5	Start Project | Video 5	
+ 
+Unit 6	Runserver and Migrate Database | Video 6	
+ 
+Unit 7	Startapp | Video 7	
+ 
+Unit 8	Create The Homepage | Video 8	
+ 
+Unit 9	Extends Base and Install Bootstrap | Video 9	
+ 
+Unit 10	Create a Bootstrap Navbar | Video 10	
+ 
+Unit 11	Intro To Auth | Video 11	
+ 
+Unit 12	Create The Login Form | Video 12	
+ 
+Unit 13	Login Logic Part 1 | Video 13	
+ 
+Unit 14	Login Logic Part 2 | Video 14	
+ 
+Unit 15	Add Messages | Video 15	
+ 
+Unit 16	Determine if User is Authenticated | Video 16	
+ 
+Unit 17	Logout a User | Video 17	
+ 
+Unit 18	Adding User Profile Info To the Page | Video 18	
+ 
+Unit 19	Intro To User Registration | Video 19	
+ 
+Unit 20	Create a Registration Page | Video 20	
+ 
+Unit 21	Create a Registration Form | Video 21	
+ 
+Unit 22	Add New Registration Form Fields | Video 22	
+ 
+Unit 23	Using Widgets on the Form Fields | Video 23	
+ 
+Unit 24	Working With Labels and HelpText | Video 24	
+ 
+Unit 25	Form Validation | Video 25	
+ 
+Unit 26	Edit The User Profile Part 1 | Video 26	
+ 
+Unit 27	Edit The User Profile Part 2 | Video 27	
+ 
+Unit 28	Update User Password | Video 28	
+ 
+Unit 29	Remove Password Link | Video 29
