@@ -1,0 +1,27 @@
+{% extends 'authenticate/base.html' %}
+{% block content %}
+
+<h2 class="text-center">Register</h2>
+
+<div class="col-md-6 offset-md-3">
+<form method="POST" action="{% url 'register' %}">
+{% csrf_token %}
+
+{% if form.errors %}
+    <p>Your form has errors: {{form.errors}}</p>
+{% endif %}
+
+<!-- form.as_p wraps every field in a <p> tag to help with formattiing -->
+<!-- can also do form.as_ul for unordered list -->
+<!-- or form.as_div to wrap each element in <div> tags -->
+<!-- default is form.as_table, which doesn't look that great -->
+    {{ form.as_p }}
+<br/>
+
+<input type="submit" value="Register" class="btn btn-secondary">
+
+</form>
+
+</div>
+
+{% endblock %}
