@@ -1,10 +1,9 @@
 {% extends 'authenticate/base.html' %}
 {% block content %}
 
-<h2 class="text-center">Register</h2>
+<h2 class="text-center">Edit Profile</h2>
 
-<div class="col-md-6 offset-md-3">
-<form method="POST" action="{% url 'register' %}">
+<form method="POST" action="{% url 'edit_profile' %}">
 {% csrf_token %}
 
 {% if form.errors %}
@@ -19,7 +18,7 @@
             {{ field.errors }}
         {% endif %}
     {% endfor %}
-</div>
+
 {% endif %}
 
 <!-- form.as_p wraps every field in a <p> tag to help with formattiing -->
@@ -29,7 +28,7 @@
     {{ form.as_p }}
 <br/>
 
-<input type="submit" value="Register" class="btn btn-secondary">
+<input type="submit" value="Edit Profile" class="btn btn-secondary">
 
 </form>
 
